@@ -3,8 +3,6 @@
   description: Adds missing copyright headers to all source code files
   entry: copywrite headers
   language: golang
-  additional_dependencies:
-    - github.com/hashicorp/copywrite@v0.21.0
   pass_filenames: false
 
 - id: check-headers
@@ -12,8 +10,6 @@
   description: Checks if any copyright headers are missing, but does not make changes
   entry: copywrite headers --plan
   language: golang
-  additional_dependencies:
-    - github.com/hashicorp/copywrite@v0.21.0
   pass_filenames: false
 
 - id: add-license
@@ -21,8 +17,6 @@
   description: Adds or updates a non-compliant LICENSE file
   entry: copywrite license
   language: golang
-  additional_dependencies:
-    - github.com/hashicorp/copywrite@v0.21.0
   pass_filenames: false
 
 - id: check-license
@@ -30,6 +24,4 @@
   description: Checks if a LICENSE file is valid, but does not make changes
   entry: copywrite license --plan
   language: golang
-  additional_dependencies:
-    - github.com/hashicorp/copywrite@v0.21.0
   pass_filenames: false
